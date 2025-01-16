@@ -1,0 +1,112 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/*----------Header-----------*/
+.header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+}
+/*----------Buscador-----------*/
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-form {
+    position: relative;
+    /* width: 300px; */
+}
+
+.search-bar {
+    padding: 10px;
+    font-size: 16px;
+    height: 15px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    width: 100%;
+    /* padding-right: 10px; Espacio para el ícono */
+}
+
+.search-bar:focus {
+    border-color: #acacac;
+}
+
+.search-icon {
+    position: absolute;
+    right: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ccc;
+}
+
+/*----------Titulo-----------*/
+h2{
+    font-size: 35px;
+    color: #FFA630;
+}
+
+/*----------Opciones-----------*/
+
+.opciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    height: 100%;
+    align-items: center;
+}
+.inicio{
+    display: flex;
+    align-items: center;
+}
+.inicio i{
+    font-size: 20px;
+}
+.opciones button{
+    display: flex;
+    align-items: center;
+    width: 45px;
+    height: 30px;
+}
+.opciones button i{
+    font-size: 20px;
+}
+
+/*----------Dibujo-----------*/
+
+.dibujo img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: left top;
+}
+/*--------------------Main---------------------*/
+/*----------Articulos Destacados-----------*/
+.ArticulosDes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 75%;
+}
+.ArticulosDes h1{
+    font-size: 50px;
+    margin: 0;
+}
+.ArticulosDes p{
+    font-size: 20px;
+}
+.ArticulosDes hr{
+    width: 100%;
+}
