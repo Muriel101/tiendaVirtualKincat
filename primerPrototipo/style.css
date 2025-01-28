@@ -50,7 +50,7 @@ body {
 }
 
 /*----------Titulo-----------*/
-h2{
+titulo{
     font-size: 35px;
     color: #FFA630;
 }
@@ -158,8 +158,50 @@ h2{
     color: orange;
     text-align: center;
 }
-  .btnVerMas:hover {
+.btnVerMas:hover {
     background: #ff9800;
     color: white;
-  }
+}
+/*----------------Comision-----------------*/
+.comision{
+    background-color: rgb(90, 156, 255);
+    padding: 5% 10%;
+}
+.textoComision{
+    width: 50%;
+}
+.comision h1{
+    font-size: 45px;
+}
+.comision .formTexto{
+    border-radius: 5px;
+    height: 100%;
+    padding-left: 10px;
+}
+.formComision{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 25% 25% 25% 25%;
+    gap: 20px;
+    height: 180px;
+}
+#nombreForm{
+    grid-column: 1;
+    grid-row: 1;
+}
+#correoForm{
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+#mensajeForm{
+    grid-column: 1 / 4;
+    grid-row: 2 /  4;
+    resize: none;
+    padding-top: 10px;
+    
+}
+#enviar{
+    grid-column: 1;
+    grid-row: 4;
+}
 
