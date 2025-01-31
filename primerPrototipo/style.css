@@ -121,7 +121,7 @@ titulo{
     justify-content: space-between;
     /* background-color: red; */
     width: 100%;
-    
+
 }
 .items > div{
     margin: 5px;
@@ -154,7 +154,7 @@ titulo{
     border: 2px solid #ff9800;
     padding: 10px 28px 8px 28px;
     cursor: pointer;
-    border-radius: 3px; 
+    border-radius: 3px;
     color: orange;
     text-align: center;
 }
@@ -166,9 +166,12 @@ titulo{
 .comision{
     background-color: rgb(90, 156, 255);
     padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
 }
 .textoComision{
-    width: 50%;
+    width: 48%;
+    height: 100%;
 }
 .comision h1{
     font-size: 45px;
@@ -177,31 +180,40 @@ titulo{
     border-radius: 5px;
     height: 100%;
     padding-left: 10px;
+    /* margin: 10px; */
 }
 .formComision{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 25% 25% 25% 25%;
-    gap: 20px;
-    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 210px;
 }
 #nombreForm{
-    grid-column: 1;
-    grid-row: 1;
+    width: 30%;
+    height: 40px;
 }
 #correoForm{
-    grid-column: 2 / 4;
-    grid-row: 1;
+    width: 60%;
+    height: 40px;
 }
 #mensajeForm{
-    grid-column: 1 / 4;
-    grid-row: 2 /  4;
+    width: 100%;
     resize: none;
     padding-top: 10px;
-    
+    height: 90px;
 }
 #enviar{
-    grid-column: 1;
-    grid-row: 4;
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
 }
-
+.divImagenComision{
+    width: 48%;
+}
+.imgComision{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
