@@ -50,7 +50,7 @@ body {
 }
 
 /*----------Titulo-----------*/
-titulo{
+.titulo{
     font-size: 35px;
     color: #FFA630;
 }
@@ -216,4 +216,87 @@ titulo{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+/*----------------sticker y rota-----------------*/
+.stickersFav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 75%;
+    height: 100%;
+}
+.stickersFav .tituloSeccion{
+    width: 100%;
+}
+.sombraTitulo{
+    background-color: #ff9800;
+    position: absolute;
+    top: 25px;
+    width: 40%;
+    height: 25px;
+    z-index: -1;
+}
+.stickersFav h2{
+    font-size: 40px;
+    margin: 0;
+    padding-left: 20px;
+}
+.stickersFav hr{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+/*----------------footer-----------------*/
+.footer{
+    background-color: rgb(10, 161, 255);
+    display: flex;
+    padding: 20px 80px;
+    height: 220px;
+}
+.footer .textoSobreMi{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer h2{
+    color: white;
+    font-size: 40px;
+    margin: 0;
+}
+.footer .logo{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.textoSobreMi img{
+    width: auto;
+    height: 80px;
+}
+.sobreMi h5{
+    position: relative;
+    font-size: 30px;
+    z-index: 2;
+    margin: 0;
+}
+.divTitulo{
+    position: relative;
+}
+.sombra{
+    position: absolute;
+    top:15px;
+    border-radius: 3px;
+    background-color: white;
+    z-index: 0;
+    height: 25px;
+}
+.sobreMi .sombra{
+    width: 30%;
+    min-width: 180px;
 }
